@@ -32,13 +32,20 @@
         <th>Name</th>
         <th>Email</th>
         <th>Address</th>
+        <th>Action</th>
     </tr>
     <c:forEach items="${cList}" var="c">
     <tr>
         <td><c:out value="${c.id}"/> </td>
-        <td><c:out value="${c.name}"/> </td>
+        <td>
+            <a href="/customer/${c.id}">${c.name}</a>
+        </td>
         <td><c:out value="${c.email}"/> </td>
         <td><c:out value="${c.address}"/> </td>
+        <td>
+            <a href="/customer/${c.id}">Update</a>
+            <a href="">Delete</a>
+        </td>
     </tr>
     </c:forEach>
 </table>

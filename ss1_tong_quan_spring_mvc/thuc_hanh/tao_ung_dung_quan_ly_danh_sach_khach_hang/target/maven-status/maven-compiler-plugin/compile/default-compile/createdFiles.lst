@@ -1,0 +1,6 @@
+bean\Customer.class
+controllers\CustomerController.class
+repository\CustomerRepository.class
+repository\ipml\CustomerRepositoryIpml.class
+service\CustomerService.class
+service\ipml\CustomerServiceIpml.class
