@@ -1,4 +1,4 @@
-package vn.codegym.controller;
+package vn.codegym.model;
 
 public class User {
     private String account;
