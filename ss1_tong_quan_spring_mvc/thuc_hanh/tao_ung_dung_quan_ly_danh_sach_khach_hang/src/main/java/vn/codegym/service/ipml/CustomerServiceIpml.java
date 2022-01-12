@@ -11,16 +11,25 @@ import java.util.List;
 public class CustomerServiceIpml implements CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
-    public List<Customer> displayCustomer() {
-        return this.customerRepository.displayCustomer();
+
+
+    public List<Customer> findAll() {
+        return this.customerRepository.findAll();
     }
 
-    public Customer getCustomerById(int id) {
-        return this.customerRepository.getCustomerById(id);
+    public void save(int id, Customer customer) {
+        customerRepository.save(id, customer);
     }
 
-    public void updateCustomer(int id,Customer customer) {
-        customerRepository.updateCustomer(id, customer);
+    public Customer findById(int id) {
+        return this.customerRepository.findById(id);
     }
 
+    public void update(int id, Customer customer) {
+        customerRepository.update(id, customer);
+    }
+
+    public void remove(int id) {
+        customerRepository.remove(id);
+    }
 }

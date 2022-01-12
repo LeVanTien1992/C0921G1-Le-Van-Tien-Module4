@@ -25,7 +25,11 @@
 <body>
 
 <h2>Customer List</h2>
-
+<p>
+    <a href="/customer/create">
+        Add new customer
+    </a>
+</p>
 <table>
     <tr>
         <th>Id</th>
@@ -43,8 +47,8 @@
         <td><c:out value="${c.email}"/> </td>
         <td><c:out value="${c.address}"/> </td>
         <td>
-            <a href="/customer/${c.id}">Update</a>
-            <a href="">Delete</a>
+            <a href="/customer/update/${c.id}">Update</a>
+            <a href="/customer?id=${c.id}">Delete</a>
         </td>
     </tr>
     </c:forEach>

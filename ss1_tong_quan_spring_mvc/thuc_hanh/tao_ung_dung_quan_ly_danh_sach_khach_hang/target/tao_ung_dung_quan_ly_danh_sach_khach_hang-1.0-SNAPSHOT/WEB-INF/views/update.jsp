@@ -1,6 +1,6 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<form action="/customer" method="post">
+<form action="/customer/update" method="post">
     <label >ID:</label><br>
     <input type="text"  name="id" value="${customer.id}"><br>
     <label >Name:</label><br>
