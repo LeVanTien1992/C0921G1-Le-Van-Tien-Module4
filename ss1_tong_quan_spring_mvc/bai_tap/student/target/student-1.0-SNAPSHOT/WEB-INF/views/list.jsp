@@ -274,7 +274,7 @@
                         <h2>Manage <b>Customer</b></h2>
                     </div>
                     <div class="col-sm-6">
-                        <a href="/customer?actionUser=showFormCustomer" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
+                        <a href="/add" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Student</span></a>
                         <form action="/customer?actionUser=search" method="post">
                             <input type="text" name="search" placeholder="Enter Keyword">
                             <button type="submit"><i class="fa fa-search"></i></button>
@@ -300,7 +300,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${stList}" var="st">
+                <c:forEach items="${stList}" var="st" >
                     <tr>
                         <td>
 							<span class="custom-checkbox">
@@ -311,10 +311,10 @@
                         <td><c:out value="${st.id}"/></td>
                         <td><c:out value="${st.name}"/></td>
                         <td><c:out value="${st.age}"/></td>
-                        <td><c:out value="${st.adddress}"/></td>
+                        <td><c:out value="${st.address}"/></td>
                         <td><c:out value="${st.phone}"/></td>
                         <td>
-                            <a href="/customer?actionUser=formUpdateById&uid=${c.customerId}" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="/show/${st.id}" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-${st.id}">
                                 Delete
                             </button>

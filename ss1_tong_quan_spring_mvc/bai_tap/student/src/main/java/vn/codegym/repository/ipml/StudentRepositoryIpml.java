@@ -11,10 +11,10 @@ public class StudentRepositoryIpml implements StudentRepository {
     private static List<Student> studentList;
     static {
         studentList = new ArrayList<Student>();
-        studentList.add(new Student("ST-001", "Tiến", "10", "1 Nguyen Van Linh", "0903240343"));
-        studentList.add(new Student("ST-002", "BÌNH", "20", "2 Nguyen Van Linh", "0903240353"));
-        studentList.add(new Student("ST-003", "TRang", "20", "3 Nguyen Van Linh", "0903230343"));
-        studentList.add(new Student("ST-004", "Vinh", "10", "4 Nguyen Van Linh", "0903248343"));
+        studentList.add(new Student(1, "Tiến", "10", "1 Nguyen Van Linh", "0903240343"));
+        studentList.add(new Student(2, "BÌNH", "20", "2 Nguyen Van Linh", "0903240353"));
+        studentList.add(new Student(3, "TRang", "20", "3 Nguyen Van Linh", "0903230343"));
+        studentList.add(new Student(4, "Vinh", "10", "4 Nguyen Van Linh", "0903248343"));
     }
     public List<Student> findAll() {
         return new ArrayList<Student>(studentList);
@@ -29,15 +29,20 @@ public class StudentRepositoryIpml implements StudentRepository {
         }
     }
 
-    public Student getById(String id) {
+    public Student getById(int id) {
+        for (Student student: studentList){
+            if(id == student.getId()){
+                return student;
+            }
+        }
         return null;
     }
 
-    public void updateById(Student student) {
-
+    public void updateById(int id,Student student) {
+        studentList.add(id, student);
     }
 
     public void add(Student student) {
-
+        studentList.add(student);
     }
 }

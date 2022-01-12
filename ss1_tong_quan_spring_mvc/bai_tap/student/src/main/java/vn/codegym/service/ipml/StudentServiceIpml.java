@@ -21,15 +21,15 @@ public class StudentServiceIpml implements StudentService {
         studentRepository.remove(id);
     }
 
-    public Student getById(String id) {
-        return null;
+    public Student getById(int id) {
+        return studentRepository.getById(id);
     }
 
-    public void updateById(Student student) {
-
+    public void updateById(int id,Student student) {
+        studentRepository.updateById(id, student);
     }
 
     public void add(Student student) {
-
+        studentRepository.add(student);
     }
 }

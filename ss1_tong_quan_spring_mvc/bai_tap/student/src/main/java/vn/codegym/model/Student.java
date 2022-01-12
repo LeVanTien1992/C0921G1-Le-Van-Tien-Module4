@@ -1,28 +1,28 @@
 package vn.codegym.model;
 
 public class Student {
-    private String id;
+    private int id;
     private String name;
     private String age;
-    private String adddress;
+    private String address;
     private String phone;
 
     public Student() {
     }
 
-    public Student(String id, String name, String age, String adddress, String phone) {
+    public Student(int id, String name, String age, String adddress, String phone) {
         this.id = id;
         this.name = name;
         this.age = age;
-        this.adddress = adddress;
+        this.address = adddress;
         this.phone = phone;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -42,12 +42,12 @@ public class Student {
         this.age = age;
     }
 
-    public String getAdddress() {
-        return adddress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdddress(String adddress) {
-        this.adddress = adddress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getPhone() {
@@ -64,7 +64,7 @@ public class Student {
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", age='" + age + '\'' +
-                ", adddress='" + adddress + '\'' +
+                ", adddress='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';
     }
