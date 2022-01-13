@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d26c2cf-5668-4cbe-97fa-1966fc2af3db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../demo_data_binding/src/main/java/vn/codegym/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../demo_data_binding/src/main/java/vn/codegym/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../demo_data_binding/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../demo_data_binding/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../demo_data_binding/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../demo_data_binding/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/controller/ContentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/model/MailBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/repository/MailBoxRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/repository/ipml/MailBoxRepositoryIpml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/service/MaiBoxService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/codegym/service/ipml/MaiBoxServiceIpml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/update.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demo_data_binding/src/main/java/vn/codegym/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demo_data_binding/src/main/java/vn/codegym/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demo_data_binding/src/main/java/vn/codegym/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demo_data_binding/src/main/java/vn/codegym/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../demo_data_binding/src/main/webapp/WEB-INF/views/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../demo_data_binding/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/controller/StudentControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/controller/StudentControler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/repository/StudentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/repository/ipml/StudentRepositoryIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/repository/ipml/StudentRepositoryIpml.java" afterDir="false" />
@@ -314,7 +300,7 @@
       <option name="presentableId" value="Default" />
       <updated>1642000405924</updated>
       <workItem from="1642000407188" duration="934000" />
-      <workItem from="1642051745626" duration="11520000" />
+      <workItem from="1642051745626" duration="11874000" />
     </task>
     <servers />
   </component>
