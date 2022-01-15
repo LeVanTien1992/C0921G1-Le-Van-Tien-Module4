@@ -3,10 +3,7 @@ package vn.codegym.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import vn.codegym.model.Product;
 import vn.codegym.service.ProductService;
@@ -71,8 +68,15 @@ public class ProductController {
     }
 
     @GetMapping(value = "/searchByName")
-    public String search(@PathVariable String name){
-        productService.findByName(name);
-        return "redirect:/";
+    public String search(@RequestParam String search, Model model){
+        if (productService.checkSearch(search)){
+            List<Product> productList =  productService.findByName(search);
+            model.addAttribute("productList", productList);
+        }else {
+            List<Product> productList = productService.findAll();
+            model.addAttribute("productList", productList);
+            model.addAttribute("msgsearch", "khoong cos cos gif");
+        }
+        return "list";
     }
 }

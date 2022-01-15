@@ -35,4 +35,9 @@ public class ProductServiceIpml implements ProductService {
     public List<Product> findByName(String name) {
         return productRepository.findByName(name);
     }
+
+    @Override
+    public boolean checkSearch(String name) {
+        return productRepository.checkSearch(name);
+    }
 }

@@ -10,4 +10,5 @@ public interface ProductRepository {
     Product findById(int id);
     void remove(int id);
     List<Product> findByName(String name);
+    boolean checkSearch(String name);
 }

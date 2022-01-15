@@ -21,9 +21,10 @@
 </head>
 <body>
 <strong th:text="${message}" style="color: #03A9F4"></strong>
+<strong th:text="${msgsearch}" style="color: #03A9F4"></strong>
 <div >
-    <form action="/searchByName" method="get" >
-        <input type="text" name="name" placeholder="Enter Keyword">
+    <form action="/searchByName"  >
+        <input type="text" name="search" placeholder="Enter Keyword">
         <button type="submit" >Search</button>
     </form>
 </div>
