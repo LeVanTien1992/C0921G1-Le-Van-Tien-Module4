@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Music Application</h2>
+<a th:href="@{/createForm}">Create Music</a>
+<p th:text="${message}" style="color: green;"></p>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Song Name</th>
+        <th>Singer</th>
+        <th>Music Type</th>
+        <th>Action</th>
+    </tr>
+    <tr th:each="music: ${musicList}">
+        <td th:text="${music.id}"> </td>
+        <td th:text="${music.songName}"> </td>
+        <td th:text="${music.singer}"> </td>
+        <td th:text="${music.musicType}"> </td>
+        <td>
+            <a th:href="@{/formUpdate/{id}(id=${music.id})}">Edit</a>
+            <a th:href="@{/delete/{id}(id=${music.id})}">Delete</a>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+
