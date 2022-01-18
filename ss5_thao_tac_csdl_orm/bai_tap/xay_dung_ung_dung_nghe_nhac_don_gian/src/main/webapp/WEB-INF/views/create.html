@@ -41,6 +41,11 @@
                         <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Create Music</h3>
 
                         <div class="form-outline mb-4">
+                            <input type="text" th:field="*{id}" class="form-control form-control-lg" />
+                            <label class="form-label" >ID </label>
+                        </div>
+
+                        <div class="form-outline mb-4">
                             <input type="text" th:field="*{songName}" class="form-control form-control-lg" />
                             <label class="form-label" >Song Name </label>
                         </div>

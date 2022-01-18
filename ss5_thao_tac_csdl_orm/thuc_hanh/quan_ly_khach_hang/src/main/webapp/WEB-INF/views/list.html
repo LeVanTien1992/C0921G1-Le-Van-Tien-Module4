@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="html"  xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
-$END$
+
+<h2>Customer Management</h2>
+<a th:href="@{/showFormCreate}">Create Customer</a>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Action</th>
+    </tr>
+    <tr th:each="customer: ${customerList}">
+        <td th:text="${customer.id}"></td>
+        <td th:text="${customer.firstName}"></td>
+        <td th:text="${customer.lastName}"></td>
+        <td>
+            <a th:href="@{/update/{id}(id= ${customer.id})}">Edit</a>
+            <a th:href="@{/delete/{id}(id= ${customer.id})}">Delete</a>
+        </td>
+    </tr>
+</table>
+
 </body>
 </html>
+

@@ -10,7 +10,7 @@ import java.util.Objects;
 public class Music {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String songName;
     private String singer;
     private String musicType;
@@ -24,11 +24,11 @@ public class Music {
         this.musicType = musicType;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

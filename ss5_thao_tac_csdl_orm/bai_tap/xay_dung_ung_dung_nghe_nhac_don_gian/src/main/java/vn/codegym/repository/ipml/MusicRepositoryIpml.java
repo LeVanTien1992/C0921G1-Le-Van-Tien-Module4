@@ -43,7 +43,6 @@ public class MusicRepositoryIpml implements MusicRepository {
 
     }
 
-
     @Override
     public void save(Music music) {
         Transaction transaction = null;
@@ -51,11 +50,16 @@ public class MusicRepositoryIpml implements MusicRepository {
         try {
             session = ConnectionUtil.sessionFactory.openSession();
             transaction = session.beginTransaction();
-            Music music1 = findById(music.getId());
-            music1.setSongName(music.getSongName());
-            music1.setSinger(music.getSinger());
-            music1.setMusicType(music.getMusicType());
-            session.saveOrUpdate(music);
+            if(music.getId()== null){
+                session.save(music);
+            }else {
+                Music music1 = findById(music.getId());
+                music1.setSongName(music.getSongName());
+                music1.setSinger(music.getSinger());
+                music1.setMusicType(music.getMusicType());
+                session.saveOrUpdate(music1);
+            }
+
             transaction.commit();
         }catch (Exception e){
            if(transaction != null){
