@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<strong th:text="${message}" style="color: green"></strong>
+<h2>Customer Management</h2>
+<a th:href="@{/createForm}">Create Customer</a>
+
+<form action="/search">
+    <input type="text" name="result" placeholder="Search..." value="Search"/>
+    <button type="button" value="Search">Search</button>
+</form>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Action</th>
+    </tr>
+    <tr th:each="customer : ${customerList}">
+        <td th:text="${customer.id}"></td>
+        <td th:text="${customer.firstName}"></td>
+        <td th:text="${customer.lastName}"></td>
+        <td>
+            <a th:href="@{/update/__${customer.id}__}">Update</a>
+            <a th:href="@{/delete/__${customer.id}__}">Delete</a>
+            <a th:href="@{/view/__${customer.id}__}">View</a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+
