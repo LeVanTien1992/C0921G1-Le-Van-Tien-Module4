@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<Html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>
+        Registration Page
+    </title>
+</head>
+<body bgcolor="Lightskyblue">
+<br>
+<br>
+<form action="/result" th:object="${user}" method="post">
+
+    <label> Firstname </label>
+    <input type="text" th:field="*{firstName}" size="15"/> <br> <br>
+    <td th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}">Name Error</td>
+
+    <label> Lastname: </label>
+    <input type="text" th:field="*{lastName}" size="15"/> <br> <br>
+    <td th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}">Name Error</td>
+
+    <label> Phone :</label>
+    <input type="text" th:field="*{phoneNumber}" size="10"/> <br> <br>
+    <td th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}">Name Error</td>
+
+    <label> Age: </label>
+    <input type="text"th:field="*{age}"size="15"/> <br> <br>
+    <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Name Error</td>
+
+    <label >Email:</label>
+    <input type="email" th:field="*{email}"/> <br>
+    <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Name Error</td>
+
+    <button type="submit">submit</button>
+
+</form>
+</body>
+</html>
