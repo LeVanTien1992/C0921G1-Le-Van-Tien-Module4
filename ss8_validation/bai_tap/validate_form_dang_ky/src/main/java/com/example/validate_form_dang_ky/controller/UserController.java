@@ -21,14 +21,16 @@ public class UserController {
     }
 
     @PostMapping(value = "/result")
-    public String result(@Valid @ModelAttribute ("phoneNumber")PhoneNumber phoneNumber,
+    public String result(@Valid @ModelAttribute ("user")User user,
                          BindingResult bindingResult,
                          Model model){
+        PhoneNumber phoneNumber = new PhoneNumber();
+        phoneNumber.setNumber(user.getPhoneNumber());
         new PhoneNumber().validate(phoneNumber, bindingResult);
         if(bindingResult.hasFieldErrors()){
             return "/index";
         }else {
-            model.addAttribute("phoneNumber", phoneNumber);
+            model.addAttribute("user", user);
             return "/result";
         }
     }

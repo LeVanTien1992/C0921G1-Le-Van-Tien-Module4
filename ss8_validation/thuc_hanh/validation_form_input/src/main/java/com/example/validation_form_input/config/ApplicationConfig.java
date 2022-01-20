@@ -1,4 +1,4 @@
-package com.example.customer_validation.config;
+package com.example.validation_form_input.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;

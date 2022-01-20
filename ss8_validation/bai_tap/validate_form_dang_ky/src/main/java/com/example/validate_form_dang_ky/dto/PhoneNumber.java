@@ -32,15 +32,20 @@ public class PhoneNumber implements Validator {
     public void validate(Object target, Errors errors) {
         PhoneNumber phoneNumber = (PhoneNumber) target;
         String number = phoneNumber.getNumber();
-        ValidationUtils.rejectIfEmpty(errors, "number", "number.empty", "Data not empty!");
-        if (number.length()>11 || number.length()<10){
-            errors.rejectValue("number", "number.length");
+        ValidationUtils.rejectIfEmpty(errors, "phoneNumber", "number.empty", "Data not empty!");
+        if(number == null){
+            errors.rejectValue("phoneNumber", "number.null");
+        }else {
+            if ( number.length()>11 || number.length()<10 ){
+                errors.rejectValue("phoneNumber", "number.length");
+            }
+            if (!number.startsWith("0")){
+                errors.rejectValue("phoneNumber", "number.startsWith");
+            }
+            if (!number.matches("(^$|[0-9]*$)")){
+                errors.rejectValue("phoneNumber", "number.matches");
+            }
         }
-        if (!number.startsWith("0")){
-            errors.rejectValue("number", "number.startsWith");
-        }
-        if (!number.matches("(^$|[0-9]*$)")){
-            errors.rejectValue("number", "number.matches");
-        }
+
     }
 }

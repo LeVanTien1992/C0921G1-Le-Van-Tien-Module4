@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Song Information</h2>
+
+<a th:href="@{/createForm}">Create Song</a>
+<strong th:text="${message}" style="color: aqua"></strong>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Singer</th>
+        <th>Type</th>
+        <th>Action</th>
+    </tr>
+    <tr th:each="song : ${songList}">
+        <td th:text="${song.id}"></td>
+        <td th:text="${song.name}"></td>
+        <td th:text="${song.singer}"></td>
+        <td th:text="${song.type}"></td>
+        <td>
+            <a th:href="@{/updateForm/{id}(id=${song.id})}">Edit</a>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
+
