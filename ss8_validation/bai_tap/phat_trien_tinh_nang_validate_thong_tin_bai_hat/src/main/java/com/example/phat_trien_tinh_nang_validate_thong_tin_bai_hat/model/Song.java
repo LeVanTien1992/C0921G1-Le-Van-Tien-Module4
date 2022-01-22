@@ -25,7 +25,7 @@ public class Song {
 
     @NotEmpty(message = "Không được phép để trống")
     @Size(max = 1000, message = "Không vượt quá 1000 ký tự")
-    @Pattern(regexp = "^([a-zA-Z0-9][^,;]*[,;])*$", message = "Ngoại trừ dấu phẩy “,” , các ký tự đặc biệt còn lại không được phép lưu vào DB.")
+    @Pattern(regexp = "^[a-zA-Z0-9\\+(,)\\+]*$", message = "Ngoại trừ dấu phẩy “,” , các ký tự đặc biệt còn lại không được phép lưu vào DB.")
     private String type;
 
     public Song(String name, String singer, String type) {
