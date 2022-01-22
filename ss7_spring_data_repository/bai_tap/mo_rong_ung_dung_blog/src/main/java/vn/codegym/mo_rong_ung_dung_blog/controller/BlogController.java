@@ -1,17 +1,23 @@
-package vn.codegym.ung_dung_blog.controller;
+package vn.codegym.mo_rong_ung_dung_blog.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.repository.query.Param;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import vn.codegym.ung_dung_blog.model.Blog;
-import vn.codegym.ung_dung_blog.service.BlogService;
+import vn.codegym.mo_rong_ung_dung_blog.model.Blog;
+import vn.codegym.mo_rong_ung_dung_blog.model.Category;
+import vn.codegym.mo_rong_ung_dung_blog.service.BlogService;
+import vn.codegym.mo_rong_ung_dung_blog.model.Blog;
+import vn.codegym.mo_rong_ung_dung_blog.service.BlogService;
+import vn.codegym.mo_rong_ung_dung_blog.service.CategoryService;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class BlogController {
@@ -19,10 +25,28 @@ public class BlogController {
     @Autowired
     private BlogService blogService;
 
+    @Autowired
+    private CategoryService categoryService;
+
     @GetMapping(value = "/")
-    public String listBlog(Model model){
-        List<Blog> blogList = blogService.findAll();
-        model.addAttribute("blogList", blogList);
+    public String listBlog(Optional<String> key_word,
+                           Optional<Integer> cateId,
+                            Model model,
+                           @PageableDefault(size = 2) Pageable pageable){
+        model.addAttribute("categoryList", categoryService.findAll());
+        // Th 1: Không nhập vào ô tìm kiếm author
+        if(!key_word.isPresent()){
+
+            // Th 2; Không nhâp vào ô tìm kiếm select cateId
+            if(!cateId.isPresent()){
+                model.addAttribute("blogList", blogService.findAll(pageable));
+            }else {
+                model.addAttribute("blogList", blogService.findByCategory(cateId.get(), pageable));
+            }
+        }else {
+            model.addAttribute("blogList", blogService.findByAuthor(key_word.get(), pageable));
+        }
+//
         return "list";
     }
 

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c9b433e8-f1c3-4362-bb74-1cc8dcab8068" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/dto/UserAddressDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/resources/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/resources/templates/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/resources/templates/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/java/vn/codegym/configuration/AppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/java/vn/codegym/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/java/vn/codegym/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/java/vn/codegym/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/java/vn/codegym/repository/ipml/ProductRepositoryIpml.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/java/vn/codegym/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/java/vn/codegym/service/ipml/ProductServiceIpml.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/demo_thymeleaf/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/src/main/resources/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/service/ipml/UserServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/java/vn/codegym/demo_1_1/service/ipml/UserServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_1_1/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_1_1/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_data_binding/src/main/java/vn/codegym/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_data_binding/src/main/java/vn/codegym/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_data_binding/src/main/java/vn/codegym/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_data_binding/src/main/java/vn/codegym/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_data_binding/src/main/webapp/WEB-INF/views/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_data_binding/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_hibernate/src/main/java/vn/codegym/demo/HibernateExample1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_hibernate/src/main/java/vn/codegym/demo/HibernateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_hibernate/src/main/java/vn/codegym/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_hibernate/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_hibernate/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_hibernate/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/repository/ipml/StudentRepositoryIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/repository/ipml/StudentRepositoryIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/service/ipml/StudentServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/java/vn/codegym/service/ipml/StudentServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/webapp/WEB-INF/views/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../demo_thymeleaf/src/main/webapp/WEB-INF/views/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/controller/StudentControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/controller/StudentControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/repository/ipml/StudentRepositoryIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/repository/ipml/StudentRepositoryIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/service/ipml/StudentServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/src/main/java/vn/codegym/service/ipml/StudentServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/controller/StudentControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/controller/StudentControler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/repository/StudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/repository/ipml/StudentRepositoryIpml.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/repository/ipml/StudentRepositoryIpml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/service/ipml/StudentServiceIpml.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/classes/vn/codegym/service/ipml/StudentServiceIpml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/controller/StudentControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/controller/StudentControler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/repository/StudentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/repository/StudentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/repository/ipml/StudentRepositoryIpml.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/repository/ipml/StudentRepositoryIpml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/service/ipml/StudentServiceIpml.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss1_tong_quan_spring_mvc/bai_tap/student/target/student-1.0-SNAPSHOT/WEB-INF/classes/vn/codegym/service/ipml/StudentServiceIpml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/src/main/java/vn/codegym/controller/CaculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/src/main/java/vn/codegym/controller/CaculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/src/main/java/vn/codegym/model/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/src/main/java/vn/codegym/model/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/src/main/webapp/WEB-INF/views/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/bai_tap/may_tinh_ca_nhan/src/main/webapp/WEB-INF/views/result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_gradle/src/main/java/vn/codegym/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_gradle/src/main/java/vn/codegym/controller/EmailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_gradle/src/main/webapp/WEB-INF/views/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_gradle/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_maven/src/main/java/vn/codegym/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_maven/src/main/java/vn/codegym/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_maven/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_maven/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_maven/src/main/webapp/WEB-INF/views/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_kiem_tra_email_hop_le_su_dung_maven/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_xem_gio_hien_tai_cua_cac_thanh_pho_su_dung_gradle/src/main/java/vn/codegym/controller/TimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_xem_gio_hien_tai_cua_cac_thanh_pho_su_dung_gradle/src/main/java/vn/codegym/controller/TimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_xem_gio_hien_tai_cua_cac_thanh_pho_su_dung_maven/src/main/java/vn/codegym/controller/TimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_xem_gio_hien_tai_cua_cac_thanh_pho_su_dung_maven/src/main/java/vn/codegym/controller/TimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_xem_gio_hien_tai_cua_cac_thanh_pho_su_dung_maven/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss2_spring_controller/thuc_hanh/ung_dung_xem_gio_hien_tai_cua_cac_thanh_pho_su_dung_maven/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/build/classes/java/main/vn/codegym/controller/ContentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/build/classes/java/main/vn/codegym/controller/ContentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/build/classes/java/main/vn/codegym/repository/ipml/MailBoxRepositoryIpml.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/build/classes/java/main/vn/codegym/repository/ipml/MailBoxRepositoryIpml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/build/libs/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/build/libs/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/src/main/java/vn/codegym/controller/ContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/src/main/java/vn/codegym/controller/ContentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss3_data_binding_form/bai_tap/chuong_trinh_luu_giu_cau_hinh_ham_thu_dien_tu/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss5_thao_tac_csdl_orm/bai_tap/xay_dung_ung_dung_nghe_nhac_don_gian/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss5_thao_tac_csdl_orm/bai_tap/xay_dung_ung_dung_nghe_nhac_don_gian/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss5_thao_tac_csdl_orm/thuc_hanh/ung_dung_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss5_thao_tac_csdl_orm/thuc_hanh/ung_dung_quan_ly_khach_hang/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss6_jpa/bai_tap/ung_dung_blog/src/main/java/vn/codegym/ung_dung_blog/service/ipml/BlogServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss6_jpa/bai_tap/ung_dung_blog/src/main/java/vn/codegym/ung_dung_blog/service/ipml/BlogServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/java/com/example/management_customer/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/java/com/example/management_customer/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/java/com/example/management_customer/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/java/com/example/management_customer/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/java/com/example/management_customer/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/java/com/example/management_customer/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/java/com/example/management_customer/service/ipml/CustomerServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/java/com/example/management_customer/service/ipml/CustomerServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss6_jpa/thuc_hanh/management_customer/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/repository/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/repository/BlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/service/ipml/BlogServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/service/ipml/BlogServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/service/ipml/CategoryServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/java/vn/codegym/mo_rong_ung_dung_blog/service/ipml/CategoryServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/bai_tap/mo_rong_ung_dung_blog/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/java/com/example/management_customer/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/java/com/example/management_customer/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/java/com/example/management_customer/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/java/com/example/management_customer/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/java/com/example/management_customer/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/java/com/example/management_customer/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/java/com/example/management_customer/service/ipml/CustomerServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/java/com/example/management_customer/service/ipml/CustomerServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/customer_province/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/model/Province.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/model/Province.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/repository/ProvinceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/repository/ProvinceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/service/ProvinceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/service/ProvinceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/service/ipml/CustomerServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/service/ipml/CustomerServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/service/ipml/ProvinceServiceIpml.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/java/com/example/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/service/ipml/ProvinceServiceIpml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_quan_ly_tinh/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_quan_ly_tinh/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../phat_trien_tinh_nang_validate_thong_tin_bai_hat/src/main/java/com/example/phat_trien_tinh_nang_validate_thong_tin_bai_hat/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../phat_trien_tinh_nang_validate_thong_tin_bai_hat/src/main/java/com/example/phat_trien_tinh_nang_validate_thong_tin_bai_hat/model/Song.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23zy0McIWO7jzBZAswVWZ1Q5TlU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../ss7_spring_data_repository/thuc_hanh/ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo1NApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo_1_N.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo_1_N.Demo1NApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9b433e8-f1c3-4362-bb74-1cc8dcab8068" name="Changes" comment="" />
+      <created>1642750988493</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642750988493</updated>
+      <workItem from="1642750990099" duration="6552000" />
+      <workItem from="1642856135185" duration="691000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

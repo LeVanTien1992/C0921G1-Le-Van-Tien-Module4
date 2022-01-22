@@ -20,7 +20,19 @@
     </style>
 </head>
 <body>
+<form action="/" >
+    <input type="text" name="key_word" />
+    <button type="button" >Search</button>
+</form>
 
+<form action="/">
+    <select name="cateId" >
+        <option selected disabled>Choose Category</option>
+        <th:block th:each="category: ${categoryList}">
+            <option th:value="${category.id}" th:text="${category.name}"></option>
+        </th:block>
+    </select>
+</form>
 <h2>Blog Manager</h2>
 <a th:href="@{/createForm}">Create Blog</a>
 <strong th:text="${message}" style="color: green"></strong>
@@ -29,12 +41,14 @@
         <th>Id</th>
         <th>Topic</th>
         <th>Author</th>
+        <th>Category</th>
         <th>Action</th>
     </tr>
     <tr th:each="blog : ${blogList}">
         <td th:text="${blog.id}"></td>
         <td th:text="${blog.topic}"></td>
         <td th:text="${blog.author}"></td>
+        <td th:text="${blog.category.name}"></td>
         <td>
             <a th:href="@{/update/{id}(id= ${blog.id})}">Update</a>
             <a th:href="@{/delete/{id}(id= ${blog.id})}">Delete</a>
@@ -42,7 +56,11 @@
         </td>
     </tr>
 </table>
-
+<div>
+    <a th:href="@{'/' (page= ${blogList.number -1})}" th:if="${blogList.hasPrevious()}"> Previous</a>
+    <span th:text="${blogList.number + 1}"></span>/<span th:text="${blogList.totalPages}"></span>
+    <a th:href="@{'/' (page= ${blogList.number +1})}" th:if="${blogList.hasNext()}"> Next</a>
+</div>
 </body>
 </html>
 
