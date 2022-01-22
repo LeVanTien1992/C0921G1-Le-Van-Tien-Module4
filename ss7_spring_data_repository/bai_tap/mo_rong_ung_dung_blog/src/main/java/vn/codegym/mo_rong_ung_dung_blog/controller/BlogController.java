@@ -87,15 +87,6 @@ public class BlogController {
         return "view";
     }
 
-//    @GetMapping(value = "/delete/{id}")
-//    public String showFormDelete(@PathVariable Integer id, Model model
-//                                 ){
-//        Blog blog = blogService.findById(id);
-//        model.addAttribute("blog", blog);
-//        return "delete";
-//    }
-//
-
     @GetMapping(value = "/delete/{id}")
     public String deleteBlog(@PathVariable Integer id,
                              RedirectAttributes redirectAttributes){
