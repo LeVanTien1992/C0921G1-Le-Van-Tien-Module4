@@ -1,13 +1,19 @@
-package com.example.bo_sung_aspect_log_cho_ung_dung_quan_ly_khach_hang.controller;
+package com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.controller;
 
-import com.example.bo_sung_aspect_log_cho_ung_dung_quan_ly_khach_hang.model.Customer;
-import com.example.bo_sung_aspect_log_cho_ung_dung_quan_ly_khach_hang.service.CustomerService;
+import com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.model.Customer;
+import com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.service.CustomerService;
+import com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.service.ProvinceService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -16,10 +22,15 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
+    @Autowired
+    private ProvinceService provinceService;
+
     @GetMapping(value = "/")
-    public String listCustomer(Model model){
-        List<Customer> customerList = customerService.findAll();
+    public String listCustomer(Model model, @PageableDefault (size = 2) Pageable pageable){
+        Page<Customer> customerList = customerService.findAll(pageable);
         model.addAttribute("customerList", customerList);
+//        List<Province> provinceList = provinceService.findAll();
+//        model.addAttribute("provinceList", provinceList);
         return "list";
     }
 
@@ -30,9 +41,13 @@ public class CustomerController {
         return "create";
     }
     @PostMapping(value = "/create")
-    public String createCustomer(@ModelAttribute Customer customer,
+    public String createCustomer(@Valid @ModelAttribute Customer customer,
+                                 BindingResult bindingResult,
                                  RedirectAttributes redirectAttributes){
         customerService.save(customer);
+        if(bindingResult.hasErrors()){
+            return "create";
+        }
         redirectAttributes.addFlashAttribute("message", "create customer " +customer.getFirstName()+ " success");
         return "redirect:/";
     }
@@ -74,4 +89,5 @@ public class CustomerController {
         model.addAttribute("customerList", customerList);
         return "list";
     }
+
 }

@@ -1,9 +1,11 @@
-package com.example.bo_sung_aspect_log_cho_ung_dung_quan_ly_khach_hang.service.ipml;
+package com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.service.ipml;
 
-import com.example.bo_sung_aspect_log_cho_ung_dung_quan_ly_khach_hang.model.Customer;
-import com.example.bo_sung_aspect_log_cho_ung_dung_quan_ly_khach_hang.repository.CustomerRepository;
-import com.example.bo_sung_aspect_log_cho_ung_dung_quan_ly_khach_hang.service.CustomerService;
+import com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.model.Customer;
+import com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.repository.CustomerRepository;
+import com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +18,11 @@ public class CustomerServiceIpml implements CustomerService {
     @Override
     public List<Customer> findAll() {
         return customerRepository.findAll();
+    }
+
+    @Override
+    public Page<Customer> findAll(Pageable pageable) {
+        return customerRepository.findAll(pageable);
     }
 
     @Override

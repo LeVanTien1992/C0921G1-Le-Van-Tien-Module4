@@ -1,6 +1,6 @@
-package com.example.bo_sung_aspect_log_cho_ung_dung_quan_ly_khach_hang.repository;
+package com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.repository;
 
-import com.example.bo_sung_aspect_log_cho_ung_dung_quan_ly_khach_hang.model.Customer;
+import com.example.ung_dung_quan_ly_khach_hang_phan_trang_tiem_kiem.model.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
