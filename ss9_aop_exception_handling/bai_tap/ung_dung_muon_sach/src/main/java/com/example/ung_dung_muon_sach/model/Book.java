@@ -1,7 +1,7 @@
 package com.example.ung_dung_muon_sach.model;
 
 import javax.persistence.*;
-import java.util.Set;
+import java.util.List;
 
 @Entity
 public class Book {
@@ -13,15 +13,15 @@ public class Book {
     private Long quantity;
     private String author;
 
-    @OneToMany(mappedBy = "book", cascade = CascadeType.ALL)
-    private Set<DetailBook> detailBook;
+    @ManyToMany(mappedBy = "books")
+    private List<Order> orderList;
 
-    public Book(String bookId, String name, Long quantity, String author, Set<DetailBook> detailBook) {
+    public Book(String bookId, String name, Long quantity, String author, List<Order> detailBook) {
         this.bookId = bookId;
         this.name = name;
         this.quantity = quantity;
         this.author = author;
-        this.detailBook = detailBook;
+        this.orderList = orderList;
     }
 
     public Book() {
@@ -67,11 +67,11 @@ public class Book {
         this.author = author;
     }
 
-    public Set<DetailBook> getDetailBook() {
-        return detailBook;
+    public List<Order> getOrderList() {
+        return orderList;
     }
 
-    public void setDetailBook(Set<DetailBook> detailBook) {
-        this.detailBook = detailBook;
+    public void setOrderList(List<Order> orderList) {
+        this.orderList = orderList;
     }
 }

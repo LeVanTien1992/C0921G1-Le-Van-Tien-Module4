@@ -28,4 +28,9 @@ public class BookServiceIpml implements BookService {
     public Book findById(Long id) {
         return bookRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public void save(Book book) {
+        bookRepository.save(book);
+    }
 }

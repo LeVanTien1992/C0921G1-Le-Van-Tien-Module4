@@ -10,4 +10,5 @@ public interface BookService {
     List<Book> findAll();
     Page<Book> findAll(Pageable pageable);
     Book findById(Long id);
+    void save (Book book);
 }

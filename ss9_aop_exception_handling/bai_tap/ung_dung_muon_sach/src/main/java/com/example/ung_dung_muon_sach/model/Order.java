@@ -1,26 +1,30 @@
 package com.example.ung_dung_muon_sach.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-public class DetailBook {
+public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String topic;
     private String content;
-    @ManyToOne
-    @JoinColumn(name = "book_id", nullable = false, referencedColumnName = "id")
-    private Book book;
 
+    @ManyToMany
+    @JoinTable(name = "oder_book",
+                joinColumns = @JoinColumn(name = "book_id"),
+                inverseJoinColumns = @JoinColumn(name = "oder_id"))
 
-    public DetailBook() {
-    }
+    private List<Book> books;
 
-    public DetailBook(String topic, String content, Book book) {
+    public Order(String topic, String content, List<Book> books) {
         this.topic = topic;
         this.content = content;
-        this.book = book;
+        this.books = books;
+    }
+
+    public Order() {
     }
 
     public Long getId() {
@@ -47,11 +51,11 @@ public class DetailBook {
         this.content = content;
     }
 
-    public Book getBook() {
-        return book;
+    public List<Book> getBooks() {
+        return books;
     }
 
-    public void setBook(Book book) {
-        this.book = book;
+    public void setBooks(List<Book> books) {
+        this.books = books;
     }
 }

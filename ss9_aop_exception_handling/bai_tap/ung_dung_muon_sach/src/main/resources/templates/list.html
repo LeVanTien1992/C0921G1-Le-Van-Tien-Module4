@@ -17,41 +17,13 @@
         tr:nth-child(even) {
             background-color: #dddddd;
         }
-        .styled {
-            border: 0;
-            line-height: 2.5;
-            padding: 0 20px;
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            border-radius: 10px;
-            background-color: rgba(220, 0, 0, 1);
-            background-image: linear-gradient(to top left,
-            rgba(0, 0, 0, .2),
-            rgba(0, 0, 0, .2) 30%,
-            rgba(0, 0, 0, 0));
-            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-            inset -2px -2px 3px rgba(0, 0, 0, .6);
-        }
 
-        .styled:hover {
-            background-color: rgba(255, 0, 0, 1);
-        }
-
-        .styled:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-            inset 2px 2px 3px rgba(0, 0, 0, .6);
-        }
     </style>
 </head>
 <body>
 
 <h2>Ứng dụng mượn sách</h2>
-<button class="favorite styled"
-        type="button">
-    Return book back!
-</button>
+
 <table>
     <tr>
         <th>Id</th>
@@ -59,7 +31,7 @@
         <th>Name</th>
         <th>Quantity</th>
         <th>Author</th>
-        <th>Detail</th>
+        <th>Action</th>
     </tr>
     <tr th:each="book : ${bookList}">
         <td th:text="${book.id}"></td>
@@ -68,14 +40,10 @@
         <td th:text="${book.quantity}"></td>
         <td th:text="${book.author}"></td>
         <td>
-            <button class="favorite styled" th:onclick="|window.location.href='@{/view_detail(id=${})}'|"
-                    type="button">
-                Detail Book
-            </button>
+            <a class="btn btn-warning" th:href="@{/view/__${book.id}__}" role="button">Order</a>
         </td>
     </tr>
 </table>
-
 </body>
 </html>
 
