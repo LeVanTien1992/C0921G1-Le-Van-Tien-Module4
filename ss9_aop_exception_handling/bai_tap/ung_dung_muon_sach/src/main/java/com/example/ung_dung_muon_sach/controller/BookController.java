@@ -7,6 +7,7 @@ import com.example.ung_dung_muon_sach.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,12 +36,16 @@ public class BookController {
         return "view_detail";
     }
 
-    @PostMapping(value = "/view")
-    public String orderBook(@PathVariable long id){
+    @PostMapping(value = "/view/{id}")
+    public String orderBook(@PathVariable long id) throws Exception {
         Order order = new Order();
 
         Book book = bookService.findById(id);
         book.setQuantity(book.getQuantity()-1);
+
+        if(book.getQuantity()==0){
+            throw new Exception();
+        }
 
         List<Order> orders = book.getOrderList();
         orders.add(order);
@@ -49,6 +54,11 @@ public class BookController {
         orderService.save(order);
         bookService.save(book);
         return "redirect:/";
+    }
+
+    @ExceptionHandler(Exception.class)
+    public String handleErrors(){
+        return "errors";
     }
 
 }
