@@ -1,46 +1,37 @@
 package com.example.ung_dung_muon_sach.model;
 
 import javax.persistence.*;
-import java.util.List;
+import java.util.Set;
 
 @Entity
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String bookId;
+    private long id;
     private String name;
-    private Long quantity;
+    private long quantity;
     private String author;
 
-    @ManyToMany(mappedBy = "books")
-    private List<Order> orderList;
+    @OneToMany(mappedBy = "book", cascade = CascadeType.ALL)
+    private Set<DetailBook> detailBooks;
 
-    public Book(String bookId, String name, Long quantity, String author, List<Order> detailBook) {
-        this.bookId = bookId;
-        this.name = name;
-        this.quantity = quantity;
-        this.author = author;
-        this.orderList = orderList;
-    }
 
     public Book() {
     }
 
-    public Long getId() {
+    public Book(String name, long quantity, String author, Set<DetailBook> detailBooks) {
+        this.name = name;
+        this.quantity = quantity;
+        this.author = author;
+        this.detailBooks = detailBooks;
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
-    }
-
-    public String getBookId() {
-        return bookId;
-    }
-
-    public void setBookId(String bookId) {
-        this.bookId = bookId;
     }
 
     public String getName() {
@@ -51,11 +42,11 @@ public class Book {
         this.name = name;
     }
 
-    public Long getQuantity() {
+    public long getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(Long quantity) {
+    public void setQuantity(long quantity) {
         this.quantity = quantity;
     }
 
@@ -67,11 +58,11 @@ public class Book {
         this.author = author;
     }
 
-    public List<Order> getOrderList() {
-        return orderList;
+    public Set<DetailBook> getDetailBooks() {
+        return detailBooks;
     }
 
-    public void setOrderList(List<Order> orderList) {
-        this.orderList = orderList;
+    public void setDetailBooks(Set<DetailBook> detailBooks) {
+        this.detailBooks = detailBooks;
     }
 }

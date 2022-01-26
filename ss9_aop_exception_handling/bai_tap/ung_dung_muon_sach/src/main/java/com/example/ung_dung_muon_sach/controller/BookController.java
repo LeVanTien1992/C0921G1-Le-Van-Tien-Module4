@@ -1,18 +1,14 @@
 package com.example.ung_dung_muon_sach.controller;
 
 import com.example.ung_dung_muon_sach.model.Book;
-import com.example.ung_dung_muon_sach.model.Order;
 import com.example.ung_dung_muon_sach.service.BookService;
-import com.example.ung_dung_muon_sach.service.OrderService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-
-import java.util.List;
 
 @Controller
 public class BookController {
@@ -20,8 +16,6 @@ public class BookController {
     @Autowired
     private BookService bookService;
 
-    @Autowired
-    private OrderService orderService;
 
     @GetMapping(value = "/")
     public String listBook(Model model){
@@ -29,36 +23,17 @@ public class BookController {
         return "list";
     }
 
-    @GetMapping(value = "/view/{id}")
-    public String viewBook(Model model, @PathVariable long id){
-        Order order = orderService.findById(id);
-        model.addAttribute("order", order);
-        return "view_detail";
+    @GetMapping(value = "/formCreate")
+    public String showFormCreate(Model model){
+        Book book = new Book();
+        model.addAttribute("book", book);
+        return "create";
     }
 
-    @PostMapping(value = "/view/{id}")
-    public String orderBook(@PathVariable long id) throws Exception {
-        Order order = new Order();
-
-        Book book = bookService.findById(id);
-        book.setQuantity(book.getQuantity()-1);
-
-        if(book.getQuantity()==0){
-            throw new Exception();
-        }
-
-        List<Order> orders = book.getOrderList();
-        orders.add(order);
-        book.setOrderList(orders);
-
-        orderService.save(order);
+    @PostMapping(value = "/create")
+    public String saveBook(@ModelAttribute Book book){
         bookService.save(book);
         return "redirect:/";
-    }
-
-    @ExceptionHandler(Exception.class)
-    public String handleErrors(){
-        return "errors";
     }
 
 }

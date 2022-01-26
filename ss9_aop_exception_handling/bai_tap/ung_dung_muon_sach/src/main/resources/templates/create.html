@@ -37,26 +37,27 @@
 
                 <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
 
-                    <form style="width: 23rem;" method="post" action="/view" th:object="${order}">
+                    <form style="width: 23rem;" method="post" action="/create" th:object="${book}">
                         <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">View Blog</h3>
 
                         <div class="form-outline mb-4">
-                            <input type="text" th:field="*{id}" class="form-control form-control-lg" />
-                            <label class="form-label" >Id </label>
+                            <input type="text" th:field="*{name}" class="form-control form-control-lg" />
+                            <label class="form-label" >Name </label>
                         </div>
 
                         <div class="form-outline mb-4">
-                            <input type="text" th:field="*{topic}" class="form-control form-control-lg" />
-                            <label class="form-label" >Topic </label>
+                            <input type="text" th:field="*{quantity}" class="form-control form-control-lg" />
+                            <label class="form-label" >Quantity </label>
                         </div>
 
                         <div class="form-outline mb-4">
-                            <textarea rows = "15" cols = "100" th:field="*{content}" class="form-control form-control-lg" />
-                            <label class="form-label" >Content </label>
+                            <input type="text" th:field="*{author}" class="form-control form-control-lg" />
+                            <label class="form-label" >Author </label>
                         </div>
+
 
                         <div class="pt-1 mb-4">
-                            <button class="btn btn-info btn-lg btn-block" type="submit">Borrow Book</button>
+                            <button class="btn btn-info btn-lg btn-block" type="submit">Add Book</button>
                         </div>
 
                     </form>
