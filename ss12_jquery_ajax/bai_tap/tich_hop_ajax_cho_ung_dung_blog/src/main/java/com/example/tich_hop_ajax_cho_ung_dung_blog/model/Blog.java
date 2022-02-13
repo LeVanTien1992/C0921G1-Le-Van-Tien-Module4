@@ -1,4 +1,4 @@
-package com.example.tich_hop_restful_cho_ung_dung_blog.model;
+package com.example.tich_hop_ajax_cho_ung_dung_blog.model;
 
 import javax.persistence.*;
 

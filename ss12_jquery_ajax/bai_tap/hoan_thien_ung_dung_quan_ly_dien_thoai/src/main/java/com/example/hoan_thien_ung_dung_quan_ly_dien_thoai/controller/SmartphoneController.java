@@ -1,7 +1,7 @@
-package com.example.quan_ly_dien_thoai.controller;
+package com.example.hoan_thien_ung_dung_quan_ly_dien_thoai.controller;
 
-import com.example.quan_ly_dien_thoai.model.Smartphone;
-import com.example.quan_ly_dien_thoai.service.ISmartphoneService;
+import com.example.hoan_thien_ung_dung_quan_ly_dien_thoai.model.Smartphone;
+import com.example.hoan_thien_ung_dung_quan_ly_dien_thoai.service.ISmartphoneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

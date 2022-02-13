@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+<div>
+  <input type="text" id="inputSearch">
+</div>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Topic</th>
+    <th>Category</th>
+    <th>Category_Id</th>
+  </tr>
+</table>
+
+<script>
+  $(document).ready(function () {
+    $.ajax({
+      url:"http://localhost:8080/api/v1/blog",
+      type: "GET",
+      dataType: "json",
+      success: function (data) {
+        console.log(data);
+        let tr = [];
+        for (let i = 0; i < data.length; i++) {
+          tr.push("<tr>");
+          tr.push('<td>' + data[i].id + '</td>');
+          tr.push('<td>' + data[i].topic + '</td>');
+          tr.push('<td>' + data[i].author + '</td>');
+          tr.push('<td>' + data[i].name + '</td>');
+          tr.push("</tr>");
+        }
+        $('table').append($(tr.join("")));
+      }
+    })
+  })
+
+
+  $("#inputSearch").keyup(function () {
+    let value = $(this).val();
+    console.log(value);
+  })
+</script>
+</body>
+</html>

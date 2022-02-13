@@ -1,7 +1,7 @@
-package com.example.tich_hop_restful_cho_ung_dung_blog.controller;
+package com.example.tich_hop_ajax_cho_ung_dung_blog.controller;
 
-import com.example.tich_hop_restful_cho_ung_dung_blog.controller.model.Category;
-import com.example.tich_hop_restful_cho_ung_dung_blog.service.CategoryService;
+import com.example.tich_hop_ajax_cho_ung_dung_blog.model.Category;
+import com.example.tich_hop_ajax_cho_ung_dung_blog.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
